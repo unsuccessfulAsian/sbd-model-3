@@ -4,7 +4,13 @@ A machine learning project that predicts a lifter's competition squat, bench pre
 
 ## Motivation
 
-I've been training and competing in powerlifting (squat, bench, deadlift — "SBD") for a while, and I was curious whether a simple model could estimate someone's expected competition numbers just from a few basic stats. Beyond the lifting angle, this project was also a chance to practice the full lifecycle of a small ML project: cleaning a messy real-world dataset, iterating on features and models, evaluating honestly, and finally packaging the result into something interactive rather than leaving it as a notebook full of print statements.
+I've been training in powerlifting (squat, bench, deadlift — "SBD") for a while, and I was curious whether a simple model could estimate someone's expected competition numbers just from a few basic stats. Behind that, this project was also a way to practice the full lifecycle of a small ML project,
+- Cleaning a messy real-world dataset
+- Iterating on features and models 
+- Evaluating the models accuracy
+and finally packaging the result into something interactive rather than leaving it as a notebook full of print statements.
+
+I chose this as my project idea because it helps me practice and demonstrate the skills that I've practiced, while also being based on a personal passion that I am interested in.
 
 ## Dataset
 
@@ -89,9 +95,3 @@ The Streamlit app (`app.py`) retrains and exposes this final model through three
    ```
 
 The first run downloads and caches the dataset via `kagglehub`; subsequent runs reuse the cached copy and the cached model.
-
-## Possible Next Steps
-
-- Add more predictive features (e.g. training age / years lifting) if a dataset with that information can be found.
-- Compare the final linear model against the gradient boosting experiments head-to-head inside the app itself, rather than just in the notebook.
-- Show a lifter's predicted total against the broader distribution (e.g. a percentile) for more context than a single number.
